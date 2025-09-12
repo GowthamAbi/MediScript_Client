@@ -3,6 +3,7 @@ import NavBar from '../components/bars/NavBar'
 import HeroSectioin from '../components/bars/HeroSectioin'
 import Footer from '../components/bars/Footer'
 import Category from '../components/bars/Category'
+import NewsFeed from '../components/bars/NewsFeed'
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
     <div className='bg-gray-400'>
     <NavBar/>
     <Category/>
+    <NewsFeed/>
     <HeroSectioin/>
     <Footer/>
     </div>
