@@ -44,19 +44,12 @@ export default function Category() {
 
   return (
     <div className='bg-white mt-2 m-4 h-auto p-4 shadow-2xl'>
-        <div className=''>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-  {medicineCategory.map((item, i) => (
-    <div 
-      key={i} 
-      className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition"
-    >
-      <img className="w-12 h-12 mb-2" src={item.image} alt={item.name} />
-      <h1 className="text-center text-sm font-medium">{item.name}</h1>
-    </div>
-  ))}
-</div>
-
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
+            {medicineCategory.map((item,index)=>(
+              <div className='flex flex-col items-center bg-white rounded-lg  cursor-pointer shadow-md hover:shadow-lg  transition' key={index}>
+                <img src={item.image} alt="img" className='w-12 h-12 mb-2'/>
+                <h4 className='text-center'>{item.name}</h4>
+            </div>))}
         </div>
     </div>
   )
