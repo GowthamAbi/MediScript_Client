@@ -12,16 +12,12 @@ export default function Category() {
   "Antihistamines",
   "Cough & Cold Medicines",
   "Vitamins & Minerals",
-  "Antidiabetic Drugs",
-  "Antihypertensives",
-  "Antidepressants",
-  "Antifungals",
-  "Antivirals"
+ 
 ]
 
 
   return (
-    <div className='bg-white m-4 h-auto p-4'>
+    <div className='bg-white mt-2 m-4 h-auto p-4 shadow-2xl'>
         <div className=''>
             {medicineCategory.map((item,index)=>(
               <div className='inline-flex bg-red-50 border-2 mx-2 my-2 px-2 w-60 justify-center'>

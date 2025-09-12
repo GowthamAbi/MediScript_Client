@@ -8,7 +8,7 @@ import NewsFeed from '../components/bars/NewsFeed'
 export default function HomePage() {
   return (
     <>
-    <div className='bg-gray-400'>
+    <div className='bg-gray-200'>
     <NavBar/>
     <Category/>
     <NewsFeed/>
