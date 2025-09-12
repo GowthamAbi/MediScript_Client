@@ -3,9 +3,9 @@ import React from 'react'
 export default function Cards({item,index}) {
   return (
     <div>
-        <div>
+        <div className='' > 
             <img src="" alt={`${index}`} />
-            <h1>{item}</h1>
+            <h1 className='text-wrap'>{item}</h1>
         </div>
         
         </div>

@@ -21,10 +21,11 @@ export default function Category() {
 
 
   return (
-    <div className='bg-white m-4 h-auto max-w-2xl'>
-        <div>
-            {medicineCategory.map((item,index)=>(<div>
-                <Cards key={index} value={item} index={index+1}/>
+    <div className='bg-white m-4 h-auto p-4'>
+        <div className=''>
+            {medicineCategory.map((item,index)=>(
+              <div className='inline-flex bg-red-50 border-2 mx-2 my-2 px-2 w-60 justify-center'>
+                <Cards  key={index} item={item} index={index+1}/>
             </div>))}
         </div>
     </div>
