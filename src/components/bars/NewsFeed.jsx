@@ -20,21 +20,14 @@ const NewsFeed = () => {
   }, [images.length]);
 
   return (
-    <div className="w-[600px] h-[300px] overflow-hidden relative rounded-lg shadow-lg">
+    <div className=" h-[800px] overflow-hidden relative rounded-lg shadow-lg">
       <img
         src={images[index]}
         alt="slideshow"
         className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
       />
       <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images.map((_, i) => (
-          <div
-            key={i}
-            className={`w-3 h-3 rounded-full ${
-              i === index ? "bg-white" : "bg-gray-400"
-            }`}
-          ></div>
-        ))}//
+        {images.map((_, i) => (<div key={i} className={`w-3 h-3 rounded-full ${ i === index ? "bg-white" : "bg-gray-400"}`}></div>))}
       </div>
     </div>
   );
