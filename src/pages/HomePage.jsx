@@ -8,7 +8,7 @@ import NewsFeed from '../components/HomePageSection/Offers'
 export default function HomePage() {
   return (
     <>
-    <div className='bg-gray-200'>
+    <div className='bg-green-100'>
     <NavBar/>
     <HeroSectioin/>
     <Footer/>

@@ -15,7 +15,7 @@ useEffect(()=>{
 
   return (
     <div className='h-64 mx-4 overflow-hidden relative'>
-      <img src={image[index]} alt="sideshow" className='w-full h-full '/>
+      <img src={image[index]} alt="sideshow" className='w-full h-full rounded '/>
       <div className='absolute bottom-2 left-1/2 flex  gap-2.5'>
         {image.map((_,i)=>(
           <div key={i} className={`rounded-full w-3 h-3  ${i===index?"bg-white":"bg-gray-400"}`}></div>

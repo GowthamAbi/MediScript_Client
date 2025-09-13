@@ -41,7 +41,7 @@ export default function Category() {
 
 
   return (
-    <div className='bg-white mt-2 m-4 h-auto p-4 shadow-2xl'>
+    <div className='mt-2 m-4 h-auto p-4 '>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
             {medicineCategory.map((item,index)=>(
               <div className='flex flex-col items-center bg-white rounded-lg  cursor-pointer shadow-md hover:shadow-lg  transition' key={index}>
