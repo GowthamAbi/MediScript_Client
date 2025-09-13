@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function () {
+export default function Offers () {
 const image=[
   "https://picsum.photos/id/1018/600/300", "https://picsum.photos/id/1015/600/300", "https://picsum.photos/id/1016/600/300", "https://picsum.photos/id/1019/600/300", "https://picsum.photos/id/1020/600/300"
 ]
