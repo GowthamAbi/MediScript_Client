@@ -23,8 +23,8 @@ const handleSubmit=(e)=>{
       <div className='  bg-blue-300 shadow-2xl mx-auto w-auto p-4 rounded'>
         <h1 className='text-center my-4 text-2xl font-bold text-red-500'>Admin Login</h1>
         <form className='flex flex-col ' onSubmit={handleSubmit}>
-        <input type="text" id="name"  value={name} onChange={handleChange}  className='outline-0 mb-4' placeholder='Enter Your Name'/>
-        <input type="mail"  id="mail" value={mail}  onChange={handleChange}  placeholder='Enter Your Mail ID' className='outline-0 mb-4'/> 
+        <input type="text" id="name" required value={name} onChange={handleChange}  className='outline-0 mb-4' placeholder='Enter Your Name'/>
+        <input type="mail"  id="mail" required value={mail}  onChange={handleChange}  placeholder='Enter Your Mail ID' className='outline-0 mb-4'/> 
         <button type="submit"  className='bg-blue-500 rounded-2xl py-2 hover:text-white cursor-pointer  hover:bg-blue-900'>Submit</button>
         </form>
         <div className="flex gap-4 mt-4">
