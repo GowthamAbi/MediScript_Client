@@ -42,15 +42,13 @@ export default function Category() {
  
 ]
 
-const handleClick=()=>{
-navigate('/blog')
-}
+
 
   return (
     <div className='mt-2 m-4 h-auto p-4 '>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-2' onClick={handleClick} >
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-2'  >
             {medicineCategory.map((item,index)=>(
-              <div className='flex flex-col items-center bg-white rounded-lg  cursor-pointer shadow-md hover:shadow-lg  transition' key={index} >
+              <div onClick={()=>navigate(`/${index}`)} className='flex flex-col items-center bg-white rounded-lg  cursor-pointer shadow-md hover:shadow-lg  transition' key={index} >
                 <img src={item.image} alt="img" className='w-12 h-12 mb-2' />
                 <h4 className='text-center'>{item.name}</h4>
             </div>))}

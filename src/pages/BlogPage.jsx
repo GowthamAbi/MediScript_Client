@@ -1,8 +1,11 @@
 import React from 'react'
 import NavBar from '../components/HomePageSection/NavBar'
 import Footer from '../components/HomePageSection/Footer'
+import { useParams } from 'react-router-dom'
 
 export default function BlogPage() {
+
+  const {id}=useParams()
 
     const medicineCategory=[
   {
@@ -38,14 +41,14 @@ export default function BlogPage() {
         <section>
 
             {/* Navigate Link */}
-            <div>
-                <p>pagelink</p>
+            <div className='flex gap-2 cursor-pointer'>
+                <a href="/">Home</a><p>{">"}</p><a href={`${id}`}>{id}</a>
             </div>
 
             {/* Item Category */}
             <div className='h-[200px] mx-4 w-auto rounded-xl bg-[#F1CCD7] flex '>
                 <div className='w-32 flex flex-col justify-center items-center'>
-                <img src="" alt="icon" />
+                <img src={"src\assets\Empty.jpg"} alt="icon" />
                 <h4>Title</h4>
                 <p>page</p>
                 </div>
