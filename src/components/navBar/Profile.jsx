@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function () {
   const[register,setRegister]=useState(false)
+    const[login,setLogin]=useState(false)
+
     const[arrow,setArrow]=useState(false)
+    const navigate=useNavigate()
   return (
    <>
    <div className='relative'>
@@ -16,14 +20,19 @@ export default function () {
    
    </div>
    <div  >
-      {arrow&&<ul className= 'absolute bg-white w-[140px]  mt-2  rounded text-center leading-8 cursor-move:bg-white'>
+      {arrow&&<ul className= 'absolute bg-white w-[140px] scroll mt-2  rounded text-center leading-8 cursor-move:bg-white'>
       <li className='cursor-pointer hover:bg-gray-100 px-4 py-2 ' onClick={()=>(setRegister(!register))}>Register</li>
       {register&&<div>
-        <li className='cursor-pointer hover:bg-gray-100 px-4 py-2'>Admin</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2'>Vendor</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2'>Client</li>
+        <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/admin')}>Admin</li>
+      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/vendor')}>Vendor</li>
+      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/client')}>Client</li>
       </div>}
-      <li className={`navbar`}>Login</li>
+      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>(setLogin(!login))} >Login</li>
+            {login&&<div>
+        <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/admin')}>Admin</li>
+      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/vendor')}>Vendor</li>
+      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/client')}>Client</li>
+      </div>}
       <li className='cursor-pointer hover:bg-gray-100 px-4 py-2'>Setting</li>
 
     </ul>}
