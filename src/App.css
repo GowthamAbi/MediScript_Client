@@ -3,3 +3,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.navClick{
+
+  cursor:"pointer";
+  padding-left: 4;
+  padding-right: 4;
+}
+.navClick:hover{
+background-color: gray;
+}
