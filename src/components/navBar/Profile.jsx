@@ -19,19 +19,19 @@ export default function () {
     </div>
    
    </div>
-   <div  >
+   <div  className='absolute' >
       {arrow&&<ul className= 'absolute bg-white w-[140px] scroll mt-2  rounded text-center leading-8 cursor-move:bg-white'>
       <li className='cursor-pointer hover:bg-gray-100 px-4 py-2 ' onClick={()=>(setRegister(!register))}>Register</li>
       {register&&<div>
-        <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/admin')}>Admin</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/vendor')}>Vendor</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/client')}>Client</li>
+        <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/admin')}>Admin</li>
+      <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/vendor')}>Vendor</li>
+      <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/register/client')}>Client</li>
       </div>}
       <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>(setLogin(!login))} >Login</li>
             {login&&<div>
-        <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/admin')}>Admin</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/vendor')}>Vendor</li>
-      <li className='cursor-pointer hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/client')}>Client</li>
+        <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/admin')}>Admin</li>
+      <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/vendor')}>Vendor</li>
+      <li className='cursor-pointer bg-gray-400 hover:bg-gray-100 px-4 py-2' onClick={()=>navigate('/login/client')}>Client</li>
       </div>}
       <li className='cursor-pointer hover:bg-gray-100 px-4 py-2'>Setting</li>
 

@@ -9,6 +9,7 @@ import VendorRegister from './components/Register/VendorRegister.jsx'
 import AdminLogin from './components/Login/AdminLogin.jsx'
 import CustomerLogin from './components/Login/CustomerLogin.jsx'
 import VendorLogin from './components/Login/VendorLogin.jsx'
+import Layout from './components/Layout.jsx'
 
 createRoot(document.getElementById('root')).render(
 <BrowserRouter>
@@ -26,6 +27,9 @@ createRoot(document.getElementById('root')).render(
     <Route path="/login/vendor" element={<CustomerLogin/>}/>
     <Route path="/login/client" element={<VendorLogin/>}/>
 
+    {/*Side Bar */}
+    <Route path='/dashboard' element={<Layout/>}/>
+    
     </Routes>
 </BrowserRouter>
 

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function () {
+export default function AdminLogin () {
 
   const[name,setName]=useState('')
   const[mail,setMail]=useState('')
