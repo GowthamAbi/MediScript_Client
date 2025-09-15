@@ -30,9 +30,12 @@ export default function Routers() {
       <Route path="/login/client" element={<CustomerLogin />} />
 
       {/* Side Bar */}
-      <Route path="/admin" element={<AdminDashBorad />} />
-      <Route index path='items' element={<ItemList/>}/>
+      <Route path='/admin' element={<AdminDashBorad />} >
+      <Route  index path='items' element={<ItemList/>}/>
       <Route path='additem' element={<AddItem/>}/>
+      </Route>
+
+
     </Routes>
   )
 }

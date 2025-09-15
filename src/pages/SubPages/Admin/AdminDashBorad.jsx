@@ -1,13 +1,15 @@
 import React from 'react'
 import NavBar from '../../../components/HomePageSection/NavBar'
+import AdminSideBar from './AdminSideBar'
 import { Outlet } from 'react-router-dom'
-import AdminLayout from './AdminLayout'
+
 
 export default function AdminDashBorad() {
   return (
     <div>
       <NavBar/>
-      <AdminLayout/>
+        <AdminSideBar/>
+        <Outlet/>
       </div>
   )
 }
