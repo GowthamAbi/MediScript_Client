@@ -1,16 +1,10 @@
-import { useState } from 'react'
 import './App.css'
-import HomePage from './pages/HomePage'
-
+import Routers from './pages/Routers.jsx'
 
 function App() {
-
-
   return (
     <>
-
-     <HomePage/>
- 
+      <Routers />
     </>
   )
 }
