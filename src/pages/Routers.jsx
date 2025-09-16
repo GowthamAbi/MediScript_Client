@@ -8,10 +8,9 @@ import VendorRegister from '../components/Register/VendorRegister.jsx'
 import AdminLogin from '../components/Login/AdminLogin.jsx'
 import CustomerLogin from '../components/Login/CustomerLogin.jsx'
 import VendorLogin from '../components/Login/VendorLogin.jsx'
-import Layout from '../components/Layout.jsx'
-import AdminDashBorad from './SubPages/Admin/Admin.jsx'
 import ItemList from './SubPages/Admin/ItemList.jsx'
 import AddItem from './SubPages/Admin/AddItem.jsx'
+import Seller from './SubPages/Seller/Seller.jsx'
 
 export default function Routers() {
   return (
@@ -30,7 +29,7 @@ export default function Routers() {
       <Route path="/login/client" element={<CustomerLogin />} />
 
       {/* Admin Side Bar */}
-      <Route path='/admin' element={<Admin />} >
+      <Route path='/admin' element={<Seller />} >
       <Route  index path='productlist' element={<ItemList/>}/>
       <Route path='addproduct' element={<AddItem/>}/>
       </Route>
