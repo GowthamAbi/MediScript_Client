@@ -9,7 +9,7 @@ import AdminLogin from '../components/Login/AdminLogin.jsx'
 import CustomerLogin from '../components/Login/CustomerLogin.jsx'
 import VendorLogin from '../components/Login/VendorLogin.jsx'
 import Layout from '../components/Layout.jsx'
-import AdminDashBorad from './SubPages/Admin/AdminDashBorad.jsx'
+import AdminDashBorad from './SubPages/Admin/Admin.jsx'
 import ItemList from './SubPages/Admin/ItemList.jsx'
 import AddItem from './SubPages/Admin/AddItem.jsx'
 
@@ -29,10 +29,10 @@ export default function Routers() {
       <Route path="/login/vendor" element={<VendorLogin />} />
       <Route path="/login/client" element={<CustomerLogin />} />
 
-      {/* Side Bar */}
-      <Route path='/admin' element={<AdminDashBorad />} >
-      <Route  index path='items' element={<ItemList/>}/>
-      <Route path='additem' element={<AddItem/>}/>
+      {/* Admin Side Bar */}
+      <Route path='/admin' element={<Admin />} >
+      <Route  index path='productlist' element={<ItemList/>}/>
+      <Route path='addproduct' element={<AddItem/>}/>
       </Route>
 
 

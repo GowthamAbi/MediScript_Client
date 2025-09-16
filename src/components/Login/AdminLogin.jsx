@@ -1,7 +1,9 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function AdminLogin () {
 
+  const navigate=useNavigate()
   const[name,setName]=useState('')
   const[mail,setMail]=useState('')
 
@@ -13,8 +15,11 @@ id==="name"?setName(value):setMail(value)
 const handleSubmit=(e)=>{
   e.preventDefault();
   console.log("name:",name,"mail:",mail)
+  navigate('/admin/items')
   setMail('')
   setName('')
+  
+
 }
 
   return (
